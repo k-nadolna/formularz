@@ -1,0 +1,154 @@
+
+/* general */
+html{
+
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body{ 
+  display: block;
+  margin: auto;
+}
+
+/* menu */
+.navbar-brand img {
+  height: 40px;
+  width: 40px;
+}
+
+/* main page */
+
+.main_page_card button{
+  height: 40px;
+}
+
+
+/* part PROGGRESS */
+#proggress{
+margin: 0px;
+position: relative;
+}
+
+/* buttons "<" ">" */
+.btn_arrow_next, .btn_arrow_prev{
+  border: none;
+  height: 20px;
+  line-height: 1;
+  padding: 0px;
+  position: absolute;
+  top: 50%;
+  translate: 0% -50%;
+  z-index: 1;
+  width: 20px;
+}
+
+.btn_arrow_prev{
+  display: none;
+  left: 0%;  
+}
+
+.btn_arrow_next{
+  right: 0%;
+}
+
+.btn_arrow_prev img, .btn_arrow_next img{
+  max-height: 100%;
+  max-width: 100%;
+}
+
+/*whole space of buttons */
+.btn_space {
+  display: none;
+}
+
+.btn_space.space_show
+{
+  display: block;
+  height: 60px;
+  padding: 0px;
+  position: relative;
+}
+
+/*buttons of parts */
+.btn_part, .btn_part:hover{
+  background-color: white;
+  border-color: gray;
+  border-radius: 50%;
+  color: gray;
+  height: 40px;
+  left: 50%;
+  padding: 0px;
+  position: absolute;
+  top:50%;
+  width: 40px;
+  translate: -50% -50%;
+ 
+}
+
+.btn_part:focus{
+  animation: buttonBackground 1s;
+}
+
+.active_btn, .active_btn:hover {
+  background-color: #0d6efd;
+  border-color:   #0d6efd;
+  color: white;
+}
+
+.filled_part, .filled_part:hover {
+  background-color: white;
+  border-color:   #0d6efd;
+  color: #0d6efd;
+}
+
+
+/* line */
+.line{
+  background-color: gray;
+  display: block;
+  margin: auto;
+  height: 0.5px;
+  position: absolute;
+  top: 50%;
+  translate: 0% -50%;
+  width: 100%;
+  z-index: -1;
+}
+
+.filled_line{
+  background-color: #0d6efd;
+}
+
+/* title of parts */
+.btn_title{
+  display: none;
+}
+
+.btn_title.title_show{
+  display: block;
+  text-align: center;
+}
+
+.active_title{
+  font-weight: 600;
+}
+
+@keyframes buttonBackground {
+  from {background-color: white;}
+  to { background-color: #0d6efd;}
+  
+}
+
+@media screen and (max-width: 768px)   {
+ 
+  h4 {
+    font-size: 18px;
+  }
+
+  h5 {
+    font-size: 16px;
+  }
+
+}
