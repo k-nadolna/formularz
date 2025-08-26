@@ -13,7 +13,7 @@
 
       <a class="navbar-brand d-flex align-items-center" href="index.php">
         <img src="images/logo.png" height="512px" width="512px" alt="logo">
-        <h2 class="m-0 ps-1">Silesia Pharma</h2>
+        <h2 class="m-0 ps-1">Medic Pharma</h2>
       </a>
 
       <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
